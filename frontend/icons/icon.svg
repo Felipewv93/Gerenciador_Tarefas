@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6a11cb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c70db7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="url(#bg)"/>
+  
+  <!-- Task list icon -->
+  <g transform="translate(96, 96)">
+    <!-- List background -->
+    <rect x="0" y="0" width="320" height="320" rx="24" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    
+    <!-- Completed task -->
+    <circle cx="40" cy="80" r="12" fill="#51cf66"/>
+    <path d="M34 80 L38 84 L46 76" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="70" y="72" width="200" height="4" rx="2" fill="rgba(255,255,255,0.8)"/>
+    <rect x="70" y="84" width="150" height="3" rx="1.5" fill="rgba(255,255,255,0.6)"/>
+    
+    <!-- Pending task -->
+    <circle cx="40" cy="160" r="12" fill="#ff6b6b"/>
+    <rect x="70" y="152" width="180" height="4" rx="2" fill="rgba(255,255,255,0.8)"/>
+    <rect x="70" y="164" width="120" height="3" rx="1.5" fill="rgba(255,255,255,0.6)"/>
+    
+    <!-- Another pending task -->
+    <circle cx="40" cy="240" r="12" fill="#ff6b6b"/>
+    <rect x="70" y="232" width="220" height="4" rx="2" fill="rgba(255,255,255,0.8)"/>
+    <rect x="70" y="244" width="160" height="3" rx="1.5" fill="rgba(255,255,255,0.6)"/>
+  </g>
+</svg>

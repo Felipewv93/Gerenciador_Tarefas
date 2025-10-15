@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Meta tags para PWA -->
+  <meta name="theme-color" content="#6a11cb">
+  <meta name="description" content="Aplicativo para gerenciar suas tarefas diárias">
+  
+  <!-- Ícones para diferentes plataformas -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  
+  <!-- Meta tags para iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Tarefas">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Gerenciador de Tarefas</h1>
+    <button class="btn-nova-tarefa" onclick="criarTarefa()">+ Nova Tarefa</button>
+  </header>
+
+  <div class="containers-wrapper">
+    <div class="container-section">
+      <h3 class="section-title">Tarefas do Dia</h3>
+      <div id="container-tarefas-hoje">
+        <ul id="tarefas-do-dia"></ul>
+      </div>
+    </div>
+
+    <div class="container-section" id="section-todas-tarefas">
+      <h3 class="section-title">Minhas Tarefas</h3>
+      <div id="container-tarefas">
+        <ul id="lista-tarefas"></ul>
+      </div>
+      <div class="toggle-container">
+        <button class="btn-toggle" onclick="toggleListarTarefas()">Mostrar Mais</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Indicador de versão -->
+  <div class="version-indicator" id="version-indicator">
+    <span id="version-text">v1.5.0</span>
+    <span id="build-date">13/10  /2025</span>
+  </div>
+</body>
+</html>
